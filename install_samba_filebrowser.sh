@@ -61,7 +61,7 @@ echo "=== Riavvio Samba ==="
 systemctl restart smbd
 
 echo "=== Installazione FileBrowser ==="
-
+apt install curl -y
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/addon/filebrowser.sh)"
 
 echo ""
@@ -77,4 +77,4 @@ echo "FileBrowser disponibile su:"
 echo "  http://<IP-DEL-SERVER>:8080"
 echo "Login:"
 echo "  Default user: admin"
-echo "  Default password: helper-scripts.com"
+echo "  Default community-scripts.org"
