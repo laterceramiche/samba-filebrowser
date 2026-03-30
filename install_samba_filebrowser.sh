@@ -60,8 +60,10 @@ echo ""
 echo "=== Riavvio Samba ==="
 systemctl restart smbd
 
-echo "=== Installazione FileBrowser ==="
 apt install curl -y
+
+echo "=== Installazione FileBrowser ==="
+
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/addon/filebrowser.sh)"
 
 echo ""
